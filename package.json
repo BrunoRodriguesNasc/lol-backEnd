@@ -20,7 +20,7 @@
     "react-google-charts": "^3.0.15"
   },
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "test": "jest --testEnvironment=node --runInBand ./tests/teste.test.js"
   },
   "engines": {
