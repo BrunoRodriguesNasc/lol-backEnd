@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
+    "cheerio": "^1.0.0-rc.10",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "flatted": "^3.2.5",
+    "generate-password": "^1.7.0",
+    "jest": "^27.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mongodb": "^4.2.2",
+    "mongodb-memory-server": "^8.0.3",
+    "mongoose": "^6.0.13",
+    "mongoose-auto-increment": "^5.0.1",
+    "nodemailer": "^6.7.2",
+    "react-google-charts": "^3.0.15"
+  },
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "jest --testEnvironment=node --runInBand ./tests/teste.test.js"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
