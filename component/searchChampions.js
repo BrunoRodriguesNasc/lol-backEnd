@@ -6,7 +6,7 @@ const searchChampions = async ( champion ) => {
 
     try {
         const verifyText = textVerify(champion);
-        const { data: { data } } = await axios.get(`http://ddragon.leagueoflegends.com/cdn/12.3.1/data/pt_BR/${verifyText ? 'champion/' + verifyText : 'champion'}.json`);
+        const { data: { data } } = await axios.get(`http://ddragon.leagueoflegends.com/cdn/12.3.1/data/en_US/${verifyText ? 'champion/' + verifyText : 'champion'}.json`);
 
         return dataNormalize(data);
     } catch (error) {
