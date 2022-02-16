@@ -10,14 +10,6 @@ const textVerify = (text) => {
    return text ? text.charAt(0).toUpperCase() + text.slice(1).trim() : false;
 }
 
-const normalizeText = (name) => {
-    const textFormated = name.replace(/\s/g, '');
-    if(textFormated.split("'").lenght > 0){
-        console.log(textFormated.split("'")[0]?.toUpperCase().join("'"));
-    }
-    
-    return textFormated;
-}
 
 const normalize = (data) => {
     let { id, name, title, blurb, info, tags, stats } = data;

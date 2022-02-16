@@ -1,9 +1,14 @@
-const { searchChampions } = require('../component/searchChampions');
+const { searchChampions, searchByName } = require('../component/searchChampions');
 
-const list =  async ( req,res ) => {
-    const champion = req.body.champion || false;
-    const championsData = await searchChampions(champion || false);
+const list =  async (req, res) => {
+    const championsData = await searchChampions();
     return res.json(championsData);
 }
 
-module.exports = { list }
+const getByName = async (req, res) => {
+    const { name } = req.params;
+    const champions = await searchByName(name);
+    return res.json(champions);
+}
+
+module.exports = { list, getByName }
