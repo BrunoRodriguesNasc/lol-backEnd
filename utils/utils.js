@@ -14,6 +14,7 @@ const textVerify = (text) => {
 const normalize = (data) => {
     let { id, name, title, blurb, info, tags, stats } = data;
     return {
+        id,
         name,
         title,
         description: blurb,
